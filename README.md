@@ -67,17 +67,7 @@ A separate model is trained for each (alphabet, error profile, coverage depth) c
 
 ---
 
-## Results
 
-### Performance Hierarchy
-
-Across **all 330+ experimental configurations**, the decoder ordering is consistent:
-
-**Bi-LSTM > KL/ML > Min.D** (Illumina profiles)
-
-**Bi-LSTM > Min.D > KL/ML** (Nanopore profiles, where KL/ML degrades due to log-amplification of noise)
-
-KL divergence and Maximum Likelihood decoders produce **identical decisions** in all configurations.
 
 ---
 
