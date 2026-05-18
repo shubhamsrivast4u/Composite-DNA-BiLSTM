@@ -1,0 +1,181 @@
+{
+    "results": {
+        "lstm": {
+            "adjacent_confusion_count": 172561,
+            "total_adjacent_samples": 7984913,
+            "adjacent_confusion_rate": 2.161088041911039
+        },
+        "mindist": {
+            "adjacent_confusion_count": 354840,
+            "total_adjacent_samples": 7984913,
+            "adjacent_confusion_rate": 4.44388060333281
+        },
+        "kl": {
+            "adjacent_confusion_count": 329915,
+            "total_adjacent_samples": 7984913,
+            "adjacent_confusion_rate": 4.131729425229805
+        },
+        "ml": {
+            "adjacent_confusion_count": 329915,
+            "total_adjacent_samples": 7984913,
+            "adjacent_confusion_rate": 4.131729425229805
+        }
+    },
+    "adjacent_pairs": [
+        {
+            "idx1": 4,
+            "idx2": 11,
+            "sym1": "M1",
+            "sym2": "T2",
+            "distance": 0.40824830532073975
+        },
+        {
+            "idx1": 4,
+            "idx2": 12,
+            "sym1": "M1",
+            "sym2": "T3",
+            "distance": 0.40824830532073975
+        },
+        {
+            "idx1": 5,
+            "idx2": 10,
+            "sym1": "M2",
+            "sym2": "T1",
+            "distance": 0.40824830532073975
+        },
+        {
+            "idx1": 5,
+            "idx2": 13,
+            "sym1": "M2",
+            "sym2": "T4",
+            "distance": 0.40824830532073975
+        },
+        {
+            "idx1": 6,
+            "idx2": 11,
+            "sym1": "M3",
+            "sym2": "T2",
+            "distance": 0.40824830532073975
+        },
+        {
+            "idx1": 6,
+            "idx2": 13,
+            "sym1": "M3",
+            "sym2": "T4",
+            "distance": 0.40824830532073975
+        },
+        {
+            "idx1": 7,
+            "idx2": 12,
+            "sym1": "M4",
+            "sym2": "T3",
+            "distance": 0.40824830532073975
+        },
+        {
+            "idx1": 7,
+            "idx2": 13,
+            "sym1": "M4",
+            "sym2": "T4",
+            "distance": 0.40824830532073975
+        },
+        {
+            "idx1": 8,
+            "idx2": 10,
+            "sym1": "M5",
+            "sym2": "T1",
+            "distance": 0.40824830532073975
+        },
+        {
+            "idx1": 8,
+            "idx2": 11,
+            "sym1": "M5",
+            "sym2": "T2",
+            "distance": 0.40824830532073975
+        },
+        {
+            "idx1": 9,
+            "idx2": 10,
+            "sym1": "M6",
+            "sym2": "T1",
+            "distance": 0.40824830532073975
+        },
+        {
+            "idx1": 9,
+            "idx2": 12,
+            "sym1": "M6",
+            "sym2": "T3",
+            "distance": 0.40824830532073975
+        },
+        {
+            "idx1": 10,
+            "idx2": 11,
+            "sym1": "T1",
+            "sym2": "T2",
+            "distance": 0.4714045524597168
+        },
+        {
+            "idx1": 10,
+            "idx2": 12,
+            "sym1": "T1",
+            "sym2": "T3",
+            "distance": 0.4714045524597168
+        },
+        {
+            "idx1": 10,
+            "idx2": 13,
+            "sym1": "T1",
+            "sym2": "T4",
+            "distance": 0.4714045524597168
+        },
+        {
+            "idx1": 10,
+            "idx2": 14,
+            "sym1": "T1",
+            "sym2": "Q1",
+            "distance": 0.2886751592159271
+        },
+        {
+            "idx1": 11,
+            "idx2": 12,
+            "sym1": "T2",
+            "sym2": "T3",
+            "distance": 0.4714045524597168
+        },
+        {
+            "idx1": 11,
+            "idx2": 13,
+            "sym1": "T2",
+            "sym2": "T4",
+            "distance": 0.4714045524597168
+        },
+        {
+            "idx1": 11,
+            "idx2": 14,
+            "sym1": "T2",
+            "sym2": "Q1",
+            "distance": 0.2886751592159271
+        },
+        {
+            "idx1": 12,
+            "idx2": 13,
+            "sym1": "T3",
+            "sym2": "T4",
+            "distance": 0.4714045524597168
+        },
+        {
+            "idx1": 12,
+            "idx2": 14,
+            "sym1": "T3",
+            "sym2": "Q1",
+            "distance": 0.2886751592159271
+        },
+        {
+            "idx1": 13,
+            "idx2": 14,
+            "sym1": "T4",
+            "sym2": "Q1",
+            "distance": 0.2886751592159271
+        }
+    ],
+    "reduction_vs_kl_percent": 47.695315460042735
+}

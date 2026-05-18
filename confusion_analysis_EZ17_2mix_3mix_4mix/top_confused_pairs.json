@@ -1,0 +1,610 @@
+{
+    "lstm": [
+        {
+            "true_idx": 14,
+            "pred_idx": 11,
+            "true_symbol": "Q1",
+            "pred_symbol": "T2",
+            "true_type": "4-Mix",
+            "pred_type": "3-Mix",
+            "count": 13489,
+            "rate": 7.44919372652971
+        },
+        {
+            "true_idx": 14,
+            "pred_idx": 10,
+            "true_symbol": "Q1",
+            "pred_symbol": "T1",
+            "true_type": "4-Mix",
+            "pred_type": "3-Mix",
+            "count": 13485,
+            "rate": 7.446984758117959
+        },
+        {
+            "true_idx": 14,
+            "pred_idx": 13,
+            "true_symbol": "Q1",
+            "pred_symbol": "T4",
+            "true_type": "4-Mix",
+            "pred_type": "3-Mix",
+            "count": 13407,
+            "rate": 7.403909874088801
+        },
+        {
+            "true_idx": 14,
+            "pred_idx": 12,
+            "true_symbol": "Q1",
+            "pred_symbol": "T3",
+            "true_type": "4-Mix",
+            "pred_type": "3-Mix",
+            "count": 13392,
+            "rate": 7.395626242544732
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 4,
+            "true_symbol": "T2",
+            "pred_symbol": "M1",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 6361,
+            "rate": 3.5111638561532303
+        },
+        {
+            "true_idx": 12,
+            "pred_idx": 4,
+            "true_symbol": "T3",
+            "pred_symbol": "M1",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 6350,
+            "rate": 3.4821805579166143
+        },
+        {
+            "true_idx": 13,
+            "pred_idx": 7,
+            "true_symbol": "T4",
+            "pred_symbol": "M4",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 6343,
+            "rate": 3.495150980824333
+        },
+        {
+            "true_idx": 12,
+            "pred_idx": 9,
+            "true_symbol": "T3",
+            "pred_symbol": "M6",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 6297,
+            "rate": 3.453116688693058
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 8,
+            "true_symbol": "T1",
+            "pred_symbol": "M5",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 6273,
+            "rate": 3.4613283599384213
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 9,
+            "true_symbol": "T1",
+            "pred_symbol": "M6",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 6240,
+            "rate": 3.443119554601586
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 8,
+            "true_symbol": "T2",
+            "pred_symbol": "M5",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 6233,
+            "rate": 3.4405100322910056
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 5,
+            "true_symbol": "T1",
+            "pred_symbol": "M2",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 6232,
+            "rate": 3.438705298762353
+        },
+        {
+            "true_idx": 13,
+            "pred_idx": 6,
+            "true_symbol": "T4",
+            "pred_symbol": "M3",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 6179,
+            "rate": 3.4047828961869078
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 6,
+            "true_symbol": "T2",
+            "pred_symbol": "M3",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 6169,
+            "rate": 3.405183120359893
+        },
+        {
+            "true_idx": 12,
+            "pred_idx": 7,
+            "true_symbol": "T3",
+            "pred_symbol": "M4",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 6132,
+            "rate": 3.3626348316763273
+        }
+    ],
+    "mindist": [
+        {
+            "true_idx": 14,
+            "pred_idx": 10,
+            "true_symbol": "Q1",
+            "pred_symbol": "T1",
+            "true_type": "4-Mix",
+            "pred_type": "3-Mix",
+            "count": 27037,
+            "rate": 14.93096973713276
+        },
+        {
+            "true_idx": 14,
+            "pred_idx": 12,
+            "true_symbol": "Q1",
+            "pred_symbol": "T3",
+            "true_type": "4-Mix",
+            "pred_type": "3-Mix",
+            "count": 26868,
+            "rate": 14.83764082173625
+        },
+        {
+            "true_idx": 14,
+            "pred_idx": 13,
+            "true_symbol": "Q1",
+            "pred_symbol": "T4",
+            "true_type": "4-Mix",
+            "pred_type": "3-Mix",
+            "count": 26808,
+            "rate": 14.804506295559973
+        },
+        {
+            "true_idx": 14,
+            "pred_idx": 11,
+            "true_symbol": "Q1",
+            "pred_symbol": "T2",
+            "true_type": "4-Mix",
+            "pred_type": "3-Mix",
+            "count": 26750,
+            "rate": 14.772476253589574
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 8,
+            "true_symbol": "T2",
+            "pred_symbol": "M5",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 18470,
+            "rate": 10.195125990119504
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 8,
+            "true_symbol": "T1",
+            "pred_symbol": "M5",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 18404,
+            "rate": 10.154995558155061
+        },
+        {
+            "true_idx": 12,
+            "pred_idx": 9,
+            "true_symbol": "T3",
+            "pred_symbol": "M6",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 18271,
+            "rate": 10.019357633652671
+        },
+        {
+            "true_idx": 13,
+            "pred_idx": 5,
+            "true_symbol": "T4",
+            "pred_symbol": "M2",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 18190,
+            "rate": 10.023143046065682
+        },
+        {
+            "true_idx": 12,
+            "pred_idx": 4,
+            "true_symbol": "T3",
+            "pred_symbol": "M1",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 17528,
+            "rate": 9.611915089631877
+        },
+        {
+            "true_idx": 12,
+            "pred_idx": 7,
+            "true_symbol": "T3",
+            "pred_symbol": "M4",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 17434,
+            "rate": 9.56036784987689
+        },
+        {
+            "true_idx": 13,
+            "pred_idx": 7,
+            "true_symbol": "T4",
+            "pred_symbol": "M4",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 17399,
+            "rate": 9.587282345162002
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 4,
+            "true_symbol": "T2",
+            "pred_symbol": "M1",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 17372,
+            "rate": 9.589048657301355
+        },
+        {
+            "true_idx": 13,
+            "pred_idx": 6,
+            "true_symbol": "T4",
+            "pred_symbol": "M3",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 17343,
+            "rate": 9.556424950407758
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 9,
+            "true_symbol": "T1",
+            "pred_symbol": "M6",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 17330,
+            "rate": 9.562381711738057
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 5,
+            "true_symbol": "T1",
+            "pred_symbol": "M2",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 17216,
+            "rate": 9.49947856602899
+        }
+    ],
+    "kl": [
+        {
+            "true_idx": 12,
+            "pred_idx": 14,
+            "true_symbol": "T3",
+            "pred_symbol": "Q1",
+            "true_type": "3-Mix",
+            "pred_type": "4-Mix",
+            "count": 19550,
+            "rate": 10.720729119255088
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 14,
+            "true_symbol": "T2",
+            "pred_symbol": "Q1",
+            "true_type": "3-Mix",
+            "pred_type": "4-Mix",
+            "count": 19331,
+            "rate": 10.670383352192752
+        },
+        {
+            "true_idx": 13,
+            "pred_idx": 14,
+            "true_symbol": "T4",
+            "pred_symbol": "Q1",
+            "true_type": "3-Mix",
+            "pred_type": "4-Mix",
+            "count": 19297,
+            "rate": 10.633127617368306
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 14,
+            "true_symbol": "T1",
+            "pred_symbol": "Q1",
+            "true_type": "3-Mix",
+            "pred_type": "4-Mix",
+            "count": 19250,
+            "rate": 10.62180311315393
+        },
+        {
+            "true_idx": 12,
+            "pred_idx": 4,
+            "true_symbol": "T3",
+            "pred_symbol": "M1",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16809,
+            "rate": 9.217633542995333
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 8,
+            "true_symbol": "T1",
+            "pred_symbol": "M5",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16736,
+            "rate": 9.234623215675022
+        },
+        {
+            "true_idx": 13,
+            "pred_idx": 7,
+            "true_symbol": "T4",
+            "pred_symbol": "M4",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16713,
+            "rate": 9.209279259422527
+        },
+        {
+            "true_idx": 12,
+            "pred_idx": 7,
+            "true_symbol": "T3",
+            "pred_symbol": "M4",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16707,
+            "rate": 9.161699304112263
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 8,
+            "true_symbol": "T2",
+            "pred_symbol": "M5",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16699,
+            "rate": 9.21756409902575
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 4,
+            "true_symbol": "T2",
+            "pred_symbol": "M1",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16587,
+            "rate": 9.155742003146303
+        },
+        {
+            "true_idx": 13,
+            "pred_idx": 6,
+            "true_symbol": "T4",
+            "pred_symbol": "M3",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16571,
+            "rate": 9.131033722724267
+        },
+        {
+            "true_idx": 12,
+            "pred_idx": 9,
+            "true_symbol": "T3",
+            "pred_symbol": "M6",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16528,
+            "rate": 9.063540198621386
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 9,
+            "true_symbol": "T1",
+            "pred_symbol": "M6",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16518,
+            "rate": 9.11433474405593
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 6,
+            "true_symbol": "T2",
+            "pred_symbol": "M3",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16475,
+            "rate": 9.093919907266857
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 5,
+            "true_symbol": "T1",
+            "pred_symbol": "M2",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16461,
+            "rate": 9.082883171201395
+        }
+    ],
+    "ml": [
+        {
+            "true_idx": 12,
+            "pred_idx": 14,
+            "true_symbol": "T3",
+            "pred_symbol": "Q1",
+            "true_type": "3-Mix",
+            "pred_type": "4-Mix",
+            "count": 19550,
+            "rate": 10.720729119255088
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 14,
+            "true_symbol": "T2",
+            "pred_symbol": "Q1",
+            "true_type": "3-Mix",
+            "pred_type": "4-Mix",
+            "count": 19331,
+            "rate": 10.670383352192752
+        },
+        {
+            "true_idx": 13,
+            "pred_idx": 14,
+            "true_symbol": "T4",
+            "pred_symbol": "Q1",
+            "true_type": "3-Mix",
+            "pred_type": "4-Mix",
+            "count": 19297,
+            "rate": 10.633127617368306
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 14,
+            "true_symbol": "T1",
+            "pred_symbol": "Q1",
+            "true_type": "3-Mix",
+            "pred_type": "4-Mix",
+            "count": 19250,
+            "rate": 10.62180311315393
+        },
+        {
+            "true_idx": 12,
+            "pred_idx": 4,
+            "true_symbol": "T3",
+            "pred_symbol": "M1",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16809,
+            "rate": 9.217633542995333
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 8,
+            "true_symbol": "T1",
+            "pred_symbol": "M5",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16736,
+            "rate": 9.234623215675022
+        },
+        {
+            "true_idx": 13,
+            "pred_idx": 7,
+            "true_symbol": "T4",
+            "pred_symbol": "M4",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16713,
+            "rate": 9.209279259422527
+        },
+        {
+            "true_idx": 12,
+            "pred_idx": 7,
+            "true_symbol": "T3",
+            "pred_symbol": "M4",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16707,
+            "rate": 9.161699304112263
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 8,
+            "true_symbol": "T2",
+            "pred_symbol": "M5",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16699,
+            "rate": 9.21756409902575
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 4,
+            "true_symbol": "T2",
+            "pred_symbol": "M1",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16587,
+            "rate": 9.155742003146303
+        },
+        {
+            "true_idx": 13,
+            "pred_idx": 6,
+            "true_symbol": "T4",
+            "pred_symbol": "M3",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16571,
+            "rate": 9.131033722724267
+        },
+        {
+            "true_idx": 12,
+            "pred_idx": 9,
+            "true_symbol": "T3",
+            "pred_symbol": "M6",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16528,
+            "rate": 9.063540198621386
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 9,
+            "true_symbol": "T1",
+            "pred_symbol": "M6",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16518,
+            "rate": 9.11433474405593
+        },
+        {
+            "true_idx": 11,
+            "pred_idx": 6,
+            "true_symbol": "T2",
+            "pred_symbol": "M3",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16475,
+            "rate": 9.093919907266857
+        },
+        {
+            "true_idx": 10,
+            "pred_idx": 5,
+            "true_symbol": "T1",
+            "pred_symbol": "M2",
+            "true_type": "3-Mix",
+            "pred_type": "2-Mix",
+            "count": 16461,
+            "rate": 9.082883171201395
+        }
+    ]
+}

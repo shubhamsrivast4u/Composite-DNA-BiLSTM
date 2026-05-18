@@ -1,0 +1,23 @@
+
+\begin{table}[h]
+\caption{Decoder accuracy (\%) under isolated error types ($\mathcal{A}_{11}$, $M=10$)}
+\centering
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{l|ccc|ccc|ccc}
+\toprule
+& \multicolumn{3}{c|}{\textbf{EZ17}} 
+& \multicolumn{3}{c|}{\textbf{G15}} 
+& \multicolumn{3}{c}{\textbf{O17}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(l){8-10}
+\textbf{Error Type} & LSTM & KL & Min.D & LSTM & KL & Min.D & LSTM & KL & Min.D \\
+\midrule
+Substitutions only & 96.2 & 89.4 & 82.2 & 93.6 & 89.1 & 82.2 & 95.5 & 89.4 & 82.3 \\
+Insertions only & 95.6 & 88.1 & 81.9 & 95.2 & 87.8 & 81.8 & 96.2 & 89.0 & 82.2 \\
+Deletions only & 94.7 & 86.7 & 81.4 & 84.4 & 73.5 & 73.7 & 95.9 & 88.6 & 82.1 \\
+\midrule
+All errors (original) & 92.5 & 84.8 & 80.7 & 80.4 & 70.5 & 72.0 & 93.8 & 87.7 & 81.8 \\
+\bottomrule
+\end{tabular}
+\label{Table:ErrorTypeIsolation}
+\end{table}
