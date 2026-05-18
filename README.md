@@ -7,7 +7,7 @@ This repository contains the PyTorch implementation, dataset generation scripts,
 > **"Neural Decoding for Uniform Composite DNA Storage via Bidirectional Recurrent Networks"**
 > Shubham Srivastava, Krishna Gopal Benerjee, Adrish Banerjee
 > Department of Electrical Engineering, IIT Kanpur
-> *Accepted at IEEE ITW 2026*
+> *Submitted at IEEE ITW 2026*
 
 > 🔄 **An extended journal (transaction) version of this work is currently under preparation.**
 
