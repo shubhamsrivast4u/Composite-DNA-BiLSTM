@@ -1,0 +1,81 @@
+==============================================================================
+ COMPOSITE-DNA DECODER — EXPERIMENT REPORT (4-base eta alphabet)
+==============================================================================
+
+Timestamp        : 2026-05-22 04:54:11
+Run mode         : train_and_eval
+Error profile    : EZ17
+Platform         : Illumina miSeq + Twist Bioscience
+Alphabet mode    : eta4mix_0.1_withpure
+Eta              : 0.1
+Vocabulary size  : 39
+Sequence length  : 136
+Dataset          : ./dataset/dna_EZ17_eta4mix_0.1_withpure_100000_50.pkl
+
+Hyperparameters
+------------------------------------------------------------------------------
+  hidden_dim            : 128
+  num_layers            : 2
+  dropout               : 0.2
+  bidirectional         : True
+  batch_size            : 500
+  learning_rate         : 0.001
+  weight_decay          : 0.0001
+  epochs                : 100
+  patience              : 10
+  warmup_epochs         : 10
+  min_lr                : 1e-06
+  epsilon_klml          : 0.01
+  epsilon_klml_source   : auto (per-profile best)
+  seed                  : 42
+  train_fraction        : 0.8
+
+Coverage levels evaluated
+------------------------------------------------------------------------------
+  M = [50]
+
+
+  Decoder: Bi-LSTM
+     M |  Accuracy(%) |          NER |          SER |  FailureRate |       #pos |       #seq
+  ----------------------------------------------------------------------------------
+    50 |      45.4198 |     0.545802 |     1.000000 |     1.000000 |    2720000 |      20000
+
+  Decoder: Min. Distance
+     M |  Accuracy(%) |          NER |          SER |  FailureRate |       #pos |       #seq
+  ----------------------------------------------------------------------------------
+    50 |      44.5616 |     0.554384 |     1.000000 |     1.000000 |    2720000 |      20000
+
+  Decoder: KL Divergence
+     M |  Accuracy(%) |          NER |          SER |  FailureRate |       #pos |       #seq
+  ----------------------------------------------------------------------------------
+    50 |      44.4808 |     0.555192 |     1.000000 |     1.000000 |    2720000 |      20000
+
+  Decoder: Max. Likelihood
+     M |  Accuracy(%) |          NER |          SER |  FailureRate |       #pos |       #seq
+  ----------------------------------------------------------------------------------
+    50 |      44.4808 |     0.555192 |     1.000000 |     1.000000 |    2720000 |      20000
+
+
+Side-by-side comparison (accuracy %, higher is better)
+------------------------------------------------------------------------------
+     M |    Bi-LSTM |   Min.Dist |     KL Div |    Max Lik
+  --------------------------------------------------------
+    50 |    45.4198 |    44.5616 |    44.4808 |    44.4808
+
+
+Side-by-side comparison (NER, lower is better)
+------------------------------------------------------------------------------
+     M |      Bi-LSTM |     Min.Dist |       KL Div |      Max Lik
+  ----------------------------------------------------------------
+    50 |     0.545802 |     0.554384 |     0.555192 |     0.555192
+
+
+Side-by-side comparison (SER / Failure rate, lower is better)
+------------------------------------------------------------------------------
+     M |      Bi-LSTM |     Min.Dist |       KL Div |      Max Lik
+  ----------------------------------------------------------------
+    50 |     1.000000 |     1.000000 |     1.000000 |     1.000000
+
+==============================================================================
+ END OF REPORT
+==============================================================================

@@ -1,5 +1,5 @@
 {
-    "timestamp": "2026-01-25 20:21:47",
+    "timestamp": "2026-05-25 15:01:41",
     "device": "cuda",
     "gpu_name": "NVIDIA GeForce RTX 3080",
     "config": {
@@ -23,6 +23,12 @@
             ],
             "default_batch_size": 500
         },
+        "dataset": {
+            "num_samples": 100000,
+            "train_ratio": 0.8,
+            "max_coverage": 50
+        },
+        "epsilon_klml": 0.01,
         "error_models": {
             "erlich": {
                 "seq_length": 136,
@@ -55,7 +61,7 @@
             },
             "A_eta": {
                 "vocab_size": 34,
-                "alphabet_mode": "eta0.2",
+                "alphabet_mode": "eta0.2_ell5",
                 "name": "$\\mathcal{A}_{0.2}$"
             }
         }
@@ -90,105 +96,105 @@
         "erlich": {
             "A6": {
                 "Bi-LSTM": {
-                    "throughput_symbols_per_sec": 5682812.432874112,
-                    "latency_ms_per_batch": 11.965906107798219,
-                    "total_time_sec": 1.1965906107798219,
+                    "throughput_symbols_per_sec": 5630176.176185483,
+                    "latency_ms_per_batch": 12.077774810604751,
+                    "total_time_sec": 1.207777481060475,
                     "num_runs": 100
                 },
                 "Min_Distance": {
-                    "throughput_symbols_per_sec": 545275776.7858543,
-                    "latency_ms_per_batch": 0.12470753863453866,
-                    "total_time_sec": 0.012470753863453865,
+                    "throughput_symbols_per_sec": 459306707.5708463,
+                    "latency_ms_per_batch": 0.1480492204427719,
+                    "total_time_sec": 0.014804922044277191,
                     "num_runs": 100
                 },
                 "KL": {
-                    "throughput_symbols_per_sec": 458808118.04041725,
-                    "latency_ms_per_batch": 0.14821010641753674,
-                    "total_time_sec": 0.014821010641753674,
+                    "throughput_symbols_per_sec": 276314037.7777128,
+                    "latency_ms_per_batch": 0.24609679821878672,
+                    "total_time_sec": 0.02460967982187867,
                     "num_runs": 100
                 },
                 "ML": {
-                    "throughput_symbols_per_sec": 477942155.3820336,
-                    "latency_ms_per_batch": 0.14227663166821003,
-                    "total_time_sec": 0.014227663166821003,
+                    "throughput_symbols_per_sec": 325719716.7164856,
+                    "latency_ms_per_batch": 0.20876844879239798,
+                    "total_time_sec": 0.020876844879239798,
                     "num_runs": 100
                 }
             },
             "A10": {
                 "Bi-LSTM": {
-                    "throughput_symbols_per_sec": 5715830.327400041,
-                    "latency_ms_per_batch": 11.896784212440252,
-                    "total_time_sec": 1.1896784212440252,
+                    "throughput_symbols_per_sec": 5663771.111638255,
+                    "latency_ms_per_batch": 12.006134898401797,
+                    "total_time_sec": 1.2006134898401797,
                     "num_runs": 100
                 },
                 "Min_Distance": {
-                    "throughput_symbols_per_sec": 433712981.05144256,
-                    "latency_ms_per_batch": 0.15678571537137032,
-                    "total_time_sec": 0.01567857153713703,
+                    "throughput_symbols_per_sec": 436609874.9509659,
+                    "latency_ms_per_batch": 0.15574544668197632,
+                    "total_time_sec": 0.015574544668197632,
                     "num_runs": 100
                 },
                 "KL": {
-                    "throughput_symbols_per_sec": 398675850.0790478,
-                    "latency_ms_per_batch": 0.17056463286280632,
-                    "total_time_sec": 0.017056463286280632,
+                    "throughput_symbols_per_sec": 383910507.1950446,
+                    "latency_ms_per_batch": 0.17712461296468973,
+                    "total_time_sec": 0.017712461296468973,
                     "num_runs": 100
                 },
                 "ML": {
-                    "throughput_symbols_per_sec": 431400015.7163977,
-                    "latency_ms_per_batch": 0.15762632712721825,
-                    "total_time_sec": 0.015762632712721825,
+                    "throughput_symbols_per_sec": 402735278.3290697,
+                    "latency_ms_per_batch": 0.1688454020768404,
+                    "total_time_sec": 0.01688454020768404,
                     "num_runs": 100
                 }
             },
             "A11": {
                 "Bi-LSTM": {
-                    "throughput_symbols_per_sec": 5693034.026622519,
-                    "latency_ms_per_batch": 11.944421846419573,
-                    "total_time_sec": 1.1944421846419573,
+                    "throughput_symbols_per_sec": 5666876.585910462,
+                    "latency_ms_per_batch": 11.999555481597781,
+                    "total_time_sec": 1.1999555481597781,
                     "num_runs": 100
                 },
                 "Min_Distance": {
-                    "throughput_symbols_per_sec": 404661420.4397389,
-                    "latency_ms_per_batch": 0.16804171726107597,
-                    "total_time_sec": 0.016804171726107597,
+                    "throughput_symbols_per_sec": 414501656.7107075,
+                    "latency_ms_per_batch": 0.16405242029577494,
+                    "total_time_sec": 0.016405242029577494,
                     "num_runs": 100
                 },
                 "KL": {
-                    "throughput_symbols_per_sec": 336040241.8882241,
-                    "latency_ms_per_batch": 0.20235671661794186,
-                    "total_time_sec": 0.020235671661794186,
+                    "throughput_symbols_per_sec": 371065918.06137407,
+                    "latency_ms_per_batch": 0.18325584940612316,
+                    "total_time_sec": 0.018325584940612316,
                     "num_runs": 100
                 },
                 "ML": {
-                    "throughput_symbols_per_sec": 410419328.6575771,
-                    "latency_ms_per_batch": 0.16568420454859734,
-                    "total_time_sec": 0.016568420454859734,
+                    "throughput_symbols_per_sec": 394205824.2052696,
+                    "latency_ms_per_batch": 0.17249871976673603,
+                    "total_time_sec": 0.017249871976673603,
                     "num_runs": 100
                 }
             },
             "A_eta": {
                 "Bi-LSTM": {
-                    "throughput_symbols_per_sec": 5679218.998963584,
-                    "latency_ms_per_batch": 11.973477341234684,
-                    "total_time_sec": 1.1973477341234684,
+                    "throughput_symbols_per_sec": 5668274.147345659,
+                    "latency_ms_per_batch": 11.996596888639033,
+                    "total_time_sec": 1.1996596888639033,
                     "num_runs": 100
                 },
                 "Min_Distance": {
-                    "throughput_symbols_per_sec": 189374867.3684998,
-                    "latency_ms_per_batch": 0.35907615907490253,
-                    "total_time_sec": 0.03590761590749025,
+                    "throughput_symbols_per_sec": 190987120.66851208,
+                    "latency_ms_per_batch": 0.3560449508950114,
+                    "total_time_sec": 0.03560449508950114,
                     "num_runs": 100
                 },
                 "KL": {
-                    "throughput_symbols_per_sec": 208673278.06795567,
-                    "latency_ms_per_batch": 0.3258682694286108,
-                    "total_time_sec": 0.03258682694286108,
+                    "throughput_symbols_per_sec": 204191953.1174055,
+                    "latency_ms_per_batch": 0.3330199792981148,
+                    "total_time_sec": 0.03330199792981148,
                     "num_runs": 100
                 },
                 "ML": {
-                    "throughput_symbols_per_sec": 227889605.49563488,
-                    "latency_ms_per_batch": 0.29839009046554565,
-                    "total_time_sec": 0.029839009046554565,
+                    "throughput_symbols_per_sec": 222448321.86498874,
+                    "latency_ms_per_batch": 0.3056889772415161,
+                    "total_time_sec": 0.03056889772415161,
                     "num_runs": 100
                 }
             }
@@ -196,105 +202,105 @@
         "grass": {
             "A6": {
                 "Bi-LSTM": {
-                    "throughput_symbols_per_sec": 5489351.349847723,
-                    "latency_ms_per_batch": 9.472886081784964,
-                    "total_time_sec": 0.9472886081784964,
+                    "throughput_symbols_per_sec": 5493764.659560557,
+                    "latency_ms_per_batch": 9.465276221744716,
+                    "total_time_sec": 0.9465276221744716,
                     "num_runs": 100
                 },
                 "Min_Distance": {
-                    "throughput_symbols_per_sec": 491794451.23741835,
-                    "latency_ms_per_batch": 0.10573523119091988,
-                    "total_time_sec": 0.010573523119091988,
+                    "throughput_symbols_per_sec": 503475661.8183189,
+                    "latency_ms_per_batch": 0.10328205302357674,
+                    "total_time_sec": 0.010328205302357674,
                     "num_runs": 100
                 },
                 "KL": {
-                    "throughput_symbols_per_sec": 393209704.71617204,
-                    "latency_ms_per_batch": 0.13224495574831963,
-                    "total_time_sec": 0.013224495574831963,
+                    "throughput_symbols_per_sec": 375400707.911552,
+                    "latency_ms_per_batch": 0.1385186519473791,
+                    "total_time_sec": 0.013851865194737911,
                     "num_runs": 100
                 },
                 "ML": {
-                    "throughput_symbols_per_sec": 419189945.1906944,
-                    "latency_ms_per_batch": 0.12404877692461012,
-                    "total_time_sec": 0.012404877692461014,
+                    "throughput_symbols_per_sec": 389746254.2907927,
+                    "latency_ms_per_batch": 0.1334201404824853,
+                    "total_time_sec": 0.01334201404824853,
                     "num_runs": 100
                 }
             },
             "A10": {
                 "Bi-LSTM": {
-                    "throughput_symbols_per_sec": 5490094.901843322,
-                    "latency_ms_per_batch": 9.47160311974585,
-                    "total_time_sec": 0.9471603119745851,
+                    "throughput_symbols_per_sec": 5487995.703865765,
+                    "latency_ms_per_batch": 9.475226076319814,
+                    "total_time_sec": 0.9475226076319814,
                     "num_runs": 100
                 },
                 "Min_Distance": {
-                    "throughput_symbols_per_sec": 410489457.3432885,
-                    "latency_ms_per_batch": 0.12667804025113583,
-                    "total_time_sec": 0.012667804025113583,
+                    "throughput_symbols_per_sec": 410731996.0344033,
+                    "latency_ms_per_batch": 0.1266032364219427,
+                    "total_time_sec": 0.012660323642194271,
                     "num_runs": 100
                 },
                 "KL": {
-                    "throughput_symbols_per_sec": 333192270.90686274,
-                    "latency_ms_per_batch": 0.15606604516506195,
-                    "total_time_sec": 0.015606604516506195,
+                    "throughput_symbols_per_sec": 336908180.6014172,
+                    "latency_ms_per_batch": 0.15434472355991602,
+                    "total_time_sec": 0.015434472355991602,
                     "num_runs": 100
                 },
                 "ML": {
-                    "throughput_symbols_per_sec": 366839547.27969337,
-                    "latency_ms_per_batch": 0.1417513471096754,
-                    "total_time_sec": 0.01417513471096754,
+                    "throughput_symbols_per_sec": 354731431.90924853,
+                    "latency_ms_per_batch": 0.14658977277576923,
+                    "total_time_sec": 0.014658977277576923,
                     "num_runs": 100
                 }
             },
             "A11": {
                 "Bi-LSTM": {
-                    "throughput_symbols_per_sec": 5518672.600626634,
-                    "latency_ms_per_batch": 9.422555705532432,
-                    "total_time_sec": 0.9422555705532432,
+                    "throughput_symbols_per_sec": 5496651.992966712,
+                    "latency_ms_per_batch": 9.460304211825132,
+                    "total_time_sec": 0.9460304211825132,
                     "num_runs": 100
                 },
                 "Min_Distance": {
-                    "throughput_symbols_per_sec": 391576711.91018724,
-                    "latency_ms_per_batch": 0.13279645703732967,
-                    "total_time_sec": 0.013279645703732967,
+                    "throughput_symbols_per_sec": 390879024.5444634,
+                    "latency_ms_per_batch": 0.13303348794579506,
+                    "total_time_sec": 0.013303348794579506,
                     "num_runs": 100
                 },
                 "KL": {
-                    "throughput_symbols_per_sec": 343418742.53349936,
-                    "latency_ms_per_batch": 0.1514186430722475,
-                    "total_time_sec": 0.01514186430722475,
+                    "throughput_symbols_per_sec": 326311365.4088325,
+                    "latency_ms_per_batch": 0.15935699921101332,
+                    "total_time_sec": 0.01593569992110133,
                     "num_runs": 100
                 },
                 "ML": {
-                    "throughput_symbols_per_sec": 360930977.25416154,
-                    "latency_ms_per_batch": 0.14407186768949032,
-                    "total_time_sec": 0.014407186768949032,
+                    "throughput_symbols_per_sec": 342642223.6744475,
+                    "latency_ms_per_batch": 0.15176179818809032,
+                    "total_time_sec": 0.015176179818809032,
                     "num_runs": 100
                 }
             },
             "A_eta": {
                 "Bi-LSTM": {
-                    "throughput_symbols_per_sec": 5489666.451137322,
-                    "latency_ms_per_batch": 9.472342347726226,
-                    "total_time_sec": 0.9472342347726226,
+                    "throughput_symbols_per_sec": 5457980.60118532,
+                    "latency_ms_per_batch": 9.527333239093423,
+                    "total_time_sec": 0.9527333239093423,
                     "num_runs": 100
                 },
                 "Min_Distance": {
-                    "throughput_symbols_per_sec": 183930498.50798896,
-                    "latency_ms_per_batch": 0.28271548449993134,
-                    "total_time_sec": 0.028271548449993134,
+                    "throughput_symbols_per_sec": 185479499.95927292,
+                    "latency_ms_per_batch": 0.28035443276166916,
+                    "total_time_sec": 0.028035443276166916,
                     "num_runs": 100
                 },
                 "KL": {
-                    "throughput_symbols_per_sec": 193035428.02885386,
-                    "latency_ms_per_batch": 0.2693806029856205,
-                    "total_time_sec": 0.02693806029856205,
+                    "throughput_symbols_per_sec": 188647744.8558931,
+                    "latency_ms_per_batch": 0.27564601972699165,
+                    "total_time_sec": 0.027564601972699165,
                     "num_runs": 100
                 },
                 "ML": {
-                    "throughput_symbols_per_sec": 209482529.93191794,
-                    "latency_ms_per_batch": 0.24823072366416457,
-                    "total_time_sec": 0.024823072366416454,
+                    "throughput_symbols_per_sec": 203613561.41191864,
+                    "latency_ms_per_batch": 0.2553857397288084,
+                    "total_time_sec": 0.02553857397288084,
                     "num_runs": 100
                 }
             }
@@ -302,105 +308,105 @@
         "organick": {
             "A6": {
                 "Bi-LSTM": {
-                    "throughput_symbols_per_sec": 5225656.818875813,
-                    "latency_ms_per_batch": 7.367494907230139,
-                    "total_time_sec": 0.7367494907230139,
+                    "throughput_symbols_per_sec": 5189598.068594071,
+                    "latency_ms_per_batch": 7.418686281889677,
+                    "total_time_sec": 0.7418686281889677,
                     "num_runs": 100
                 },
                 "Min_Distance": {
-                    "throughput_symbols_per_sec": 460820095.869257,
-                    "latency_ms_per_batch": 0.08354670368134975,
-                    "total_time_sec": 0.008354670368134975,
+                    "throughput_symbols_per_sec": 455216935.7763938,
+                    "latency_ms_per_batch": 0.08457506075501442,
+                    "total_time_sec": 0.008457506075501442,
                     "num_runs": 100
                 },
                 "KL": {
-                    "throughput_symbols_per_sec": 329367870.39788765,
-                    "latency_ms_per_batch": 0.1168905757367611,
-                    "total_time_sec": 0.01168905757367611,
+                    "throughput_symbols_per_sec": 301530152.4169643,
+                    "latency_ms_per_batch": 0.12768208980560303,
+                    "total_time_sec": 0.012768208980560303,
                     "num_runs": 100
                 },
                 "ML": {
-                    "throughput_symbols_per_sec": 343423178.0359021,
-                    "latency_ms_per_batch": 0.11210658587515354,
-                    "total_time_sec": 0.011210658587515354,
+                    "throughput_symbols_per_sec": 319172654.04889446,
+                    "latency_ms_per_batch": 0.12062436901032925,
+                    "total_time_sec": 0.012062436901032925,
                     "num_runs": 100
                 }
             },
             "A10": {
                 "Bi-LSTM": {
-                    "throughput_symbols_per_sec": 5227510.900493189,
-                    "latency_ms_per_batch": 7.364881820976734,
-                    "total_time_sec": 0.7364881820976734,
+                    "throughput_symbols_per_sec": 5179632.040523375,
+                    "latency_ms_per_batch": 7.432960430160165,
+                    "total_time_sec": 0.7432960430160165,
                     "num_runs": 100
                 },
                 "Min_Distance": {
-                    "throughput_symbols_per_sec": 380469385.31444985,
-                    "latency_ms_per_batch": 0.10119079612195492,
-                    "total_time_sec": 0.010119079612195492,
+                    "throughput_symbols_per_sec": 374679774.5090691,
+                    "latency_ms_per_batch": 0.10275441221892834,
+                    "total_time_sec": 0.010275441221892834,
                     "num_runs": 100
                 },
                 "KL": {
-                    "throughput_symbols_per_sec": 302462308.5934905,
-                    "latency_ms_per_batch": 0.1272885873913765,
-                    "total_time_sec": 0.01272885873913765,
+                    "throughput_symbols_per_sec": 280942228.693872,
+                    "latency_ms_per_batch": 0.1370388502255082,
+                    "total_time_sec": 0.013703885022550821,
                     "num_runs": 100
                 },
                 "ML": {
-                    "throughput_symbols_per_sec": 312837734.50687736,
-                    "latency_ms_per_batch": 0.12306699529290199,
-                    "total_time_sec": 0.0123066995292902,
+                    "throughput_symbols_per_sec": 292833631.6091836,
+                    "latency_ms_per_batch": 0.13147396966814995,
+                    "total_time_sec": 0.013147396966814995,
                     "num_runs": 100
                 }
             },
             "A11": {
                 "Bi-LSTM": {
-                    "throughput_symbols_per_sec": 5223682.014595992,
-                    "latency_ms_per_batch": 7.370280176401138,
-                    "total_time_sec": 0.7370280176401138,
+                    "throughput_symbols_per_sec": 5153781.595294386,
+                    "latency_ms_per_batch": 7.470242828130722,
+                    "total_time_sec": 0.7470242828130722,
                     "num_runs": 100
                 },
                 "Min_Distance": {
-                    "throughput_symbols_per_sec": 359143486.94031113,
-                    "latency_ms_per_batch": 0.10719949379563332,
-                    "total_time_sec": 0.010719949379563332,
+                    "throughput_symbols_per_sec": 358858344.64448607,
+                    "latency_ms_per_batch": 0.10728467255830765,
+                    "total_time_sec": 0.010728467255830765,
                     "num_runs": 100
                 },
                 "KL": {
-                    "throughput_symbols_per_sec": 289813694.94080627,
-                    "latency_ms_per_batch": 0.1328439638018608,
-                    "total_time_sec": 0.013284396380186081,
+                    "throughput_symbols_per_sec": 273473241.5432894,
+                    "latency_ms_per_batch": 0.1407815981656313,
+                    "total_time_sec": 0.01407815981656313,
                     "num_runs": 100
                 },
                 "ML": {
-                    "throughput_symbols_per_sec": 304648914.1679705,
-                    "latency_ms_per_batch": 0.1263749785721302,
-                    "total_time_sec": 0.01263749785721302,
+                    "throughput_symbols_per_sec": 286292841.87909883,
+                    "latency_ms_per_batch": 0.13447768986225128,
+                    "total_time_sec": 0.013447768986225128,
                     "num_runs": 100
                 }
             },
             "A_eta": {
                 "Bi-LSTM": {
-                    "throughput_symbols_per_sec": 5166354.442839704,
-                    "latency_ms_per_batch": 7.452063234522939,
-                    "total_time_sec": 0.7452063234522939,
+                    "throughput_symbols_per_sec": 5151058.097302691,
+                    "latency_ms_per_batch": 7.474192539229989,
+                    "total_time_sec": 0.7474192539229989,
                     "num_runs": 100
                 },
                 "Min_Distance": {
-                    "throughput_symbols_per_sec": 177175740.8752312,
-                    "latency_ms_per_batch": 0.2172983717173338,
-                    "total_time_sec": 0.02172983717173338,
+                    "throughput_symbols_per_sec": 177666565.32766324,
+                    "latency_ms_per_batch": 0.21669805981218815,
+                    "total_time_sec": 0.021669805981218815,
                     "num_runs": 100
                 },
                 "KL": {
-                    "throughput_symbols_per_sec": 175370953.52339244,
-                    "latency_ms_per_batch": 0.219534644857049,
-                    "total_time_sec": 0.0219534644857049,
+                    "throughput_symbols_per_sec": 170376714.50463668,
+                    "latency_ms_per_batch": 0.22596984636038542,
+                    "total_time_sec": 0.022596984636038542,
                     "num_runs": 100
                 },
                 "ML": {
-                    "throughput_symbols_per_sec": 189037488.87024486,
-                    "latency_ms_per_batch": 0.2036633063107729,
-                    "total_time_sec": 0.02036633063107729,
+                    "throughput_symbols_per_sec": 182944074.41558793,
+                    "latency_ms_per_batch": 0.2104468271136284,
+                    "total_time_sec": 0.02104468271136284,
                     "num_runs": 100
                 }
             }
@@ -409,79 +415,79 @@
     "training_time": {
         "erlich": {
             "A6": {
-                "time_per_batch_sec": 0.029190764296799898,
-                "estimated_epoch_time_sec": 4.670522287487984,
-                "estimated_epoch_time_min": 0.07784203812479973,
+                "time_per_batch_sec": 0.029299442702904344,
+                "estimated_epoch_time_sec": 4.687910832464695,
+                "estimated_epoch_time_min": 0.07813184720774492,
                 "num_batches_per_epoch": 160
             },
             "A10": {
-                "time_per_batch_sec": 0.029322142293676735,
-                "estimated_epoch_time_sec": 4.691542766988277,
-                "estimated_epoch_time_min": 0.07819237944980463,
+                "time_per_batch_sec": 0.02948662880808115,
+                "estimated_epoch_time_sec": 4.717860609292984,
+                "estimated_epoch_time_min": 0.07863101015488307,
                 "num_batches_per_epoch": 160
             },
             "A11": {
-                "time_per_batch_sec": 0.029328493727371098,
-                "estimated_epoch_time_sec": 4.6925589963793755,
-                "estimated_epoch_time_min": 0.07820931660632292,
+                "time_per_batch_sec": 0.029375246400013565,
+                "estimated_epoch_time_sec": 4.700039424002171,
+                "estimated_epoch_time_min": 0.07833399040003618,
                 "num_batches_per_epoch": 160
             },
             "A_eta": {
-                "time_per_batch_sec": 0.029574325121939183,
-                "estimated_epoch_time_sec": 4.731892019510269,
-                "estimated_epoch_time_min": 0.07886486699183783,
+                "time_per_batch_sec": 0.029737877193838358,
+                "estimated_epoch_time_sec": 4.758060351014137,
+                "estimated_epoch_time_min": 0.07930100585023563,
                 "num_batches_per_epoch": 160
             }
         },
         "grass": {
             "A6": {
-                "time_per_batch_sec": 0.023092337511479856,
-                "estimated_epoch_time_sec": 3.6947740018367767,
-                "estimated_epoch_time_min": 0.06157956669727961,
+                "time_per_batch_sec": 0.023018571082502604,
+                "estimated_epoch_time_sec": 3.6829713732004166,
+                "estimated_epoch_time_min": 0.06138285622000694,
                 "num_batches_per_epoch": 160
             },
             "A10": {
-                "time_per_batch_sec": 0.02299592373892665,
-                "estimated_epoch_time_sec": 3.679347798228264,
-                "estimated_epoch_time_min": 0.0613224633038044,
+                "time_per_batch_sec": 0.023043356253765523,
+                "estimated_epoch_time_sec": 3.6869370006024837,
+                "estimated_epoch_time_min": 0.061448950010041394,
                 "num_batches_per_epoch": 160
             },
             "A11": {
-                "time_per_batch_sec": 0.023028130084276198,
-                "estimated_epoch_time_sec": 3.684500813484192,
-                "estimated_epoch_time_min": 0.0614083468914032,
+                "time_per_batch_sec": 0.023038948606699704,
+                "estimated_epoch_time_sec": 3.686231777071953,
+                "estimated_epoch_time_min": 0.06143719628453255,
                 "num_batches_per_epoch": 160
             },
             "A_eta": {
-                "time_per_batch_sec": 0.02320035845041275,
-                "estimated_epoch_time_sec": 3.71205735206604,
-                "estimated_epoch_time_min": 0.061867622534434,
+                "time_per_batch_sec": 0.023372223461046816,
+                "estimated_epoch_time_sec": 3.7395557537674904,
+                "estimated_epoch_time_min": 0.06232592922945817,
                 "num_batches_per_epoch": 160
             }
         },
         "organick": {
             "A6": {
-                "time_per_batch_sec": 0.017731795692816375,
-                "estimated_epoch_time_sec": 2.8370873108506203,
-                "estimated_epoch_time_min": 0.04728478851417701,
+                "time_per_batch_sec": 0.017750062653794883,
+                "estimated_epoch_time_sec": 2.8400100246071815,
+                "estimated_epoch_time_min": 0.047333500410119696,
                 "num_batches_per_epoch": 160
             },
             "A10": {
-                "time_per_batch_sec": 0.01769090732559562,
-                "estimated_epoch_time_sec": 2.8305451720952988,
-                "estimated_epoch_time_min": 0.047175752868254976,
+                "time_per_batch_sec": 0.01778437851462513,
+                "estimated_epoch_time_sec": 2.845500562340021,
+                "estimated_epoch_time_min": 0.04742500937233369,
                 "num_batches_per_epoch": 160
             },
             "A11": {
-                "time_per_batch_sec": 0.018166171945631505,
-                "estimated_epoch_time_sec": 2.9065875113010406,
-                "estimated_epoch_time_min": 0.04844312518835068,
+                "time_per_batch_sec": 0.017874212190508842,
+                "estimated_epoch_time_sec": 2.859873950481415,
+                "estimated_epoch_time_min": 0.047664565841356914,
                 "num_batches_per_epoch": 160
             },
             "A_eta": {
-                "time_per_batch_sec": 0.01785700754262507,
-                "estimated_epoch_time_sec": 2.857121206820011,
-                "estimated_epoch_time_min": 0.04761868678033352,
+                "time_per_batch_sec": 0.017965071881189943,
+                "estimated_epoch_time_sec": 2.8744115009903908,
+                "estimated_epoch_time_min": 0.04790685834983985,
                 "num_batches_per_epoch": 160
             }
         }

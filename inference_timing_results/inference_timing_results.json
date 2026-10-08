@@ -1,0 +1,252 @@
+{
+    "timestamp": "2026-05-25 22:38:10",
+    "device": "cuda",
+    "gpu_name": "NVIDIA GeForce RTX 3080",
+    "config": {
+        "alphabet": "A11",
+        "vocab_size": 15,
+        "seq_length": 136,
+        "batch_sizes": [
+            1,
+            50,
+            100,
+            200,
+            500
+        ],
+        "model": {
+            "input_channels": 4,
+            "hidden_dim": 128,
+            "num_layers": 2,
+            "dropout": 0.2,
+            "bidirectional": true,
+            "vocab_size": 15
+        },
+        "timing": {
+            "warmup_trials": 20,
+            "target_total_samples": 100000,
+            "min_trials": 30,
+            "max_trials": 5000
+        },
+        "seed": 42
+    },
+    "timing_results": {
+        "Bi-LSTM": {
+            "1": {
+                "batch_size": 1,
+                "n_trials": 5000,
+                "mean_batch_ms": 1.504223559051752,
+                "median_batch_ms": 1.4875440392643213,
+                "stdev_batch_ms": 0.08036304147107051,
+                "mean_per_sample_ms": 1.504223559051752,
+                "throughput_symbols_s": 90412.09279140203
+            },
+            "50": {
+                "batch_size": 50,
+                "n_trials": 2000,
+                "mean_batch_ms": 1.8028672717045993,
+                "median_batch_ms": 1.7927330918610096,
+                "stdev_batch_ms": 0.034506872095465706,
+                "mean_per_sample_ms": 0.03605734543409198,
+                "throughput_symbols_s": 3771769.617610643
+            },
+            "100": {
+                "batch_size": 100,
+                "n_trials": 1000,
+                "mean_batch_ms": 3.2154890480451286,
+                "median_batch_ms": 3.2096041832119226,
+                "stdev_batch_ms": 0.04229039740515837,
+                "mean_per_sample_ms": 0.03215489048045129,
+                "throughput_symbols_s": 4229527.7006986495
+            },
+            "200": {
+                "batch_size": 200,
+                "n_trials": 500,
+                "mean_batch_ms": 5.0630666902288795,
+                "median_batch_ms": 5.057723959907889,
+                "stdev_batch_ms": 0.04936779879339511,
+                "mean_per_sample_ms": 0.0253153334511444,
+                "throughput_symbols_s": 5372238.144224484
+            },
+            "500": {
+                "batch_size": 500,
+                "n_trials": 200,
+                "mean_batch_ms": 12.040764270350337,
+                "median_batch_ms": 12.035253690555692,
+                "stdev_batch_ms": 0.053315862257606775,
+                "mean_per_sample_ms": 0.024081528540700673,
+                "throughput_symbols_s": 5647482.042933599
+            }
+        },
+        "KL": {
+            "1": {
+                "batch_size": 1,
+                "n_trials": 5000,
+                "mean_batch_ms": 0.13631025468930602,
+                "median_batch_ms": 0.12780656106770039,
+                "stdev_batch_ms": 0.022223823438569046,
+                "mean_per_sample_ms": 0.13631025468930602,
+                "throughput_symbols_s": 997723.9079333158
+            },
+            "50": {
+                "batch_size": 50,
+                "n_trials": 2000,
+                "mean_batch_ms": 0.1320549480151385,
+                "median_batch_ms": 0.12788106687366962,
+                "stdev_batch_ms": 0.02205542567103874,
+                "mean_per_sample_ms": 0.00264109896030277,
+                "throughput_symbols_s": 51493716.07961606
+            },
+            "100": {
+                "batch_size": 100,
+                "n_trials": 1000,
+                "mean_batch_ms": 0.13011134043335915,
+                "median_batch_ms": 0.1287255436182022,
+                "stdev_batch_ms": 0.006658304924770399,
+                "mean_per_sample_ms": 0.0013011134043335914,
+                "throughput_symbols_s": 104525861.88646401
+            },
+            "200": {
+                "batch_size": 200,
+                "n_trials": 500,
+                "mean_batch_ms": 0.13237499352544546,
+                "median_batch_ms": 0.12902868911623955,
+                "stdev_batch_ms": 0.025440476248322907,
+                "mean_per_sample_ms": 0.0006618749676272273,
+                "throughput_symbols_s": 205476875.0169687
+            },
+            "500": {
+                "batch_size": 500,
+                "n_trials": 200,
+                "mean_batch_ms": 0.17017553560435772,
+                "median_batch_ms": 0.16728555783629417,
+                "stdev_batch_ms": 0.008803895739821264,
+                "mean_per_sample_ms": 0.00034035107120871543,
+                "throughput_symbols_s": 399587401.0826895
+            }
+        },
+        "ML": {
+            "1": {
+                "batch_size": 1,
+                "n_trials": 5000,
+                "mean_batch_ms": 0.1205916203558445,
+                "median_batch_ms": 0.1179729588329792,
+                "stdev_batch_ms": 0.014193158705136518,
+                "mean_per_sample_ms": 0.1205916203558445,
+                "throughput_symbols_s": 1127773.2200520078
+            },
+            "50": {
+                "batch_size": 50,
+                "n_trials": 2000,
+                "mean_batch_ms": 0.12267671502195299,
+                "median_batch_ms": 0.11822022497653961,
+                "stdev_batch_ms": 0.02439324039554286,
+                "mean_per_sample_ms": 0.0024535343004390598,
+                "throughput_symbols_s": 55430241.98832794
+            },
+            "100": {
+                "batch_size": 100,
+                "n_trials": 1000,
+                "mean_batch_ms": 0.11900622071698308,
+                "median_batch_ms": 0.11815759353339672,
+                "stdev_batch_ms": 0.004597422748391005,
+                "mean_per_sample_ms": 0.0011900622071698307,
+                "throughput_symbols_s": 114279740.31998798
+            },
+            "200": {
+                "batch_size": 200,
+                "n_trials": 500,
+                "mean_batch_ms": 0.12089572008699179,
+                "median_batch_ms": 0.11860392987728119,
+                "stdev_batch_ms": 0.04062061411483232,
+                "mean_per_sample_ms": 0.0006044786004349589,
+                "throughput_symbols_s": 224987286.4020989
+            },
+            "500": {
+                "batch_size": 500,
+                "n_trials": 200,
+                "mean_batch_ms": 0.16036739572882652,
+                "median_batch_ms": 0.15986012294888496,
+                "stdev_batch_ms": 0.0029540689014662617,
+                "mean_per_sample_ms": 0.00032073479145765303,
+                "throughput_symbols_s": 424026340.8341724
+            }
+        },
+        "Min.D": {
+            "1": {
+                "batch_size": 1,
+                "n_trials": 5000,
+                "mean_batch_ms": 0.06977542033419012,
+                "median_batch_ms": 0.06811227649450302,
+                "stdev_batch_ms": 0.01261542693370108,
+                "mean_per_sample_ms": 0.06977542033419012,
+                "throughput_symbols_s": 1949110.4367215068
+            },
+            "50": {
+                "batch_size": 50,
+                "n_trials": 2000,
+                "mean_batch_ms": 0.06960786739364266,
+                "median_batch_ms": 0.06831344217061996,
+                "stdev_batch_ms": 0.004802829701320956,
+                "mean_per_sample_ms": 0.0013921573478728533,
+                "throughput_symbols_s": 97690106.80279867
+            },
+            "100": {
+                "batch_size": 100,
+                "n_trials": 1000,
+                "mean_batch_ms": 0.07214137259870768,
+                "median_batch_ms": 0.06884010508656502,
+                "stdev_batch_ms": 0.02163434090920741,
+                "mean_per_sample_ms": 0.0007214137259870767,
+                "throughput_symbols_s": 188518730.7933704
+            },
+            "200": {
+                "batch_size": 200,
+                "n_trials": 500,
+                "mean_batch_ms": 0.08075141347944736,
+                "median_batch_ms": 0.07999944500625134,
+                "stdev_batch_ms": 0.0022336664314027144,
+                "mean_per_sample_ms": 0.0004037570673972368,
+                "throughput_symbols_s": 336836209.15097505
+            },
+            "500": {
+                "batch_size": 500,
+                "n_trials": 200,
+                "mean_batch_ms": 0.15133750392124057,
+                "median_batch_ms": 0.15049660578370094,
+                "stdev_batch_ms": 0.0026623159841549287,
+                "mean_per_sample_ms": 0.00030267500784248114,
+                "throughput_symbols_s": 449326824.0725625
+            }
+        }
+    },
+    "batching_speedup": {
+        "Bi-LSTM": {
+            "1": 1.0,
+            "50": 41.71753469209962,
+            "100": 46.780553022447755,
+            "200": 59.41946456896275,
+            "500": 62.46379072281204
+        },
+        "KL": {
+            "1": 1.0,
+            "50": 51.61118789493586,
+            "100": 104.76431511296424,
+            "200": 205.94562622298315,
+            "500": 400.49897361925946
+        },
+        "ML": {
+            "1": 1.0,
+            "50": 49.15016689771349,
+            "100": 101.33219896347417,
+            "200": 199.49692225509975,
+            "500": 375.98546702023856
+        },
+        "Min.D": {
+            "1": 1.0,
+            "50": 50.12035488718532,
+            "100": 96.72039472040773,
+            "200": 172.8153535094446,
+            "500": 230.52917659624813
+        }
+    }
+}

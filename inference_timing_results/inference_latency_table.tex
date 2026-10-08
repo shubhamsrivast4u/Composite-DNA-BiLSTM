@@ -1,0 +1,20 @@
+
+\begin{table}[t]
+\caption{Mean per-sample inference latency ($\mu$s) versus batch size
+($\mathcal{A}_{11}$, $n=136$)}
+\centering
+\renewcommand{\arraystretch}{1.15}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{c|cccc}
+\toprule
+\textbf{Batch} & \textbf{Bi-LSTM} & \textbf{KL} & \textbf{ML} & \textbf{Min.D} \\
+\midrule
+1 & 1504.22 & 136.31 & 120.59 & 69.78 \\
+50 & 36.06 & 2.64 & 2.45 & 1.39 \\
+100 & 32.15 & 1.30 & 1.19 & 0.72 \\
+200 & 25.32 & 0.66 & 0.60 & 0.40 \\
+500 & 24.08 & 0.34 & 0.32 & 0.30 \\
+\bottomrule
+\end{tabular}
+\label{Table:InferenceLatency}
+\end{table}

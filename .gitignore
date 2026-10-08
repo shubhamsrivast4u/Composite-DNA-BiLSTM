@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+
+# Model weights and binary outputs (too large for GitHub)
+*.pth
+*.pkl
+*.mat
+
+# OS
+.DS_Store

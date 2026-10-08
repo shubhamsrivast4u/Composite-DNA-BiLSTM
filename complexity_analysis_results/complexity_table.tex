@@ -1,0 +1,22 @@
+
+\begin{table}[t]
+\caption{Computational complexity comparison of decoders}
+\centering
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{l|c|c|c}
+\toprule
+\textbf{Decoder} & \textbf{Parameters} & \textbf{Time Complexity} & \textbf{Training} \\
+\midrule
+Min.\ Distance & 0 & $\mathcal{O}(|\mathcal{A}|)$ & None \\
+KL Divergence & 0 & $\mathcal{O}(|\mathcal{A}|)$ & None \\
+Max.\ Likelihood & 0 & $\mathcal{O}(|\mathcal{A}|)$ & None \\
+\midrule
+Bi-LSTM ($\mathcal{A}_6$}$) & $\sim$535K & $\mathcal{O}(d_h^2)$ & Required \\
+Bi-LSTM ($\mathcal{A}_{10}$) & $\sim$536K & $\mathcal{O}(d_h^2)$ & Required \\
+Bi-LSTM ($\mathcal{A}_{11}$) & $\sim$536K & $\mathcal{O}(d_h^2)$ & Required \\
+Bi-LSTM ($\mathcal{A}_{0.2}$) & $\sim$541K & $\mathcal{O}(d_h^2)$ & Required \\
+\bottomrule
+\end{tabular}
+\label{Table:Complexity}
+\end{table}

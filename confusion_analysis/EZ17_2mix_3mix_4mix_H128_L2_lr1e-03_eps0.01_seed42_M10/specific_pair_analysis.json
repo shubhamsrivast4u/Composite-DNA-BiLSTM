@@ -1,0 +1,132 @@
+[
+    {
+        "pair": "M5 (A|C) | T2 (A|C|T)",
+        "distance": 0.40824830532073975,
+        "decoders": {
+            "lstm": {
+                "a_to_b": 2807,
+                "b_to_a": 7699,
+                "total": 10506
+            },
+            "mindist": {
+                "a_to_b": 3515,
+                "b_to_a": 18589,
+                "total": 22104
+            },
+            "kl": {
+                "a_to_b": 3112,
+                "b_to_a": 16364,
+                "total": 19476
+            },
+            "ml": {
+                "a_to_b": 3112,
+                "b_to_a": 16364,
+                "total": 19476
+            }
+        }
+    },
+    {
+        "pair": "M6 (A|G) | T1 (A|C|G)",
+        "distance": 0.40824830532073975,
+        "decoders": {
+            "lstm": {
+                "a_to_b": 2801,
+                "b_to_a": 7579,
+                "total": 10380
+            },
+            "mindist": {
+                "a_to_b": 3440,
+                "b_to_a": 17671,
+                "total": 21111
+            },
+            "kl": {
+                "a_to_b": 3054,
+                "b_to_a": 16315,
+                "total": 19369
+            },
+            "ml": {
+                "a_to_b": 3054,
+                "b_to_a": 16315,
+                "total": 19369
+            }
+        }
+    },
+    {
+        "pair": "M1 (A|T) | T3 (A|G|T)",
+        "distance": 0.40824830532073975,
+        "decoders": {
+            "lstm": {
+                "a_to_b": 2873,
+                "b_to_a": 7856,
+                "total": 10729
+            },
+            "mindist": {
+                "a_to_b": 3475,
+                "b_to_a": 17524,
+                "total": 20999
+            },
+            "kl": {
+                "a_to_b": 3082,
+                "b_to_a": 16153,
+                "total": 19235
+            },
+            "ml": {
+                "a_to_b": 3082,
+                "b_to_a": 16153,
+                "total": 19235
+            }
+        }
+    },
+    {
+        "pair": "M2 (C|G) | T4 (C|G|T)",
+        "distance": 0.40824830532073975,
+        "decoders": {
+            "lstm": {
+                "a_to_b": 2781,
+                "b_to_a": 7650,
+                "total": 10431
+            },
+            "mindist": {
+                "a_to_b": 3443,
+                "b_to_a": 18454,
+                "total": 21897
+            },
+            "kl": {
+                "a_to_b": 3064,
+                "b_to_a": 16188,
+                "total": 19252
+            },
+            "ml": {
+                "a_to_b": 3064,
+                "b_to_a": 16188,
+                "total": 19252
+            }
+        }
+    },
+    {
+        "pair": "T1 (A|C|G) | Q1 (A|C|G|T)",
+        "distance": 0.2886751592159271,
+        "decoders": {
+            "lstm": {
+                "a_to_b": 3862,
+                "b_to_a": 14644,
+                "total": 18506
+            },
+            "mindist": {
+                "a_to_b": 1635,
+                "b_to_a": 27028,
+                "total": 28663
+            },
+            "kl": {
+                "a_to_b": 24454,
+                "b_to_a": 7133,
+                "total": 31587
+            },
+            "ml": {
+                "a_to_b": 24454,
+                "b_to_a": 7133,
+                "total": 31587
+            }
+        }
+    }
+]
