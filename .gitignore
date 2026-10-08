@@ -4,8 +4,7 @@ __pycache__/
 *.pyo
 .ipynb_checkpoints/
 
-# Model weights and binary outputs (too large for GitHub)
-*.pth
+# Binary outputs (too large for GitHub)
 *.pkl
 *.mat
 
